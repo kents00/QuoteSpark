@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuoteSpark</title>
+    <title>Motivational Quotes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
-
-</body>
+    <div class="container">
+        <h1>Motivational Quotes</h1>
+        <div class="quote-container">
+            <h2>Quote:</h2>
+            <p>{{ quotes[0]['quote'] }}</p>
+        </div>
+        <div class="keywords">
+            <h2>Keywords:</h2>
+            <ul>
+                {% for keyword in keywords %}
+                    <li><a href="/keyword/{{ keyword }}">{{ keyword }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="authors">
+            <h2>Authors:</h2>
+            <ul>
+                {% for quote in quotes %}
+                    <li><a href="/author/{{ quote['author'] }}">{{ quote['author'] }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
 </html>

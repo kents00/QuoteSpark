@@ -1,0 +1,32 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-container {
+    margin-bottom: 20px;
+}
+
+.keywords,
+.authors {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.keywords ul,
+.authors ul {
+    list-style: none;
+    padding: 0;
+}
+
+.keywords ul li,
+.authors ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.quotes {
+    text-align: left;
+}
