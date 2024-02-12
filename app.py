@@ -14,7 +14,6 @@ def get_quotes_from_db():
     conn.close()
     return [{'quote': quote[1], 'author': quote[2]} for quote in quotes]
 
-
 @app.route('/')
 def index():
     quotes_data = get_quotes_from_db()
