@@ -1,2 +1,11 @@
 env
 __pycache__
+migrate.py
+scraper.py
+quotes.txt
+quotes01.txt
+quotes.py
+quotes_data.json
+quotes.csv
+quotes.db
+quotes_data.py
