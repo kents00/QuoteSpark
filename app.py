@@ -6,13 +6,14 @@ import random
 app = Flask(__name__)
 api = Api(app)
 
+
 def get_quotes_from_db():
     conn = sqlite3.connect('quotes.db')
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM quotes")
+    cursor.execute("SELECT DISTINCT quote, author FROM quotes")
     quotes = cursor.fetchall()
     conn.close()
-    return [{'quote': quote[1], 'author': quote[2]} for quote in quotes]
+    return [{'quote': quote[0], 'author': quote[1]} for quote in quotes]
 
 @app.route('/')
 def index():
@@ -20,16 +21,12 @@ def index():
     random_quote = random.choice(quotes_data)
     return render_template('index.html', quotes=quotes_data, random_quote=random_quote)
 
-
 @app.route('/author/<author>')
 def author_quotes(author):
     quotes_data = get_quotes_from_db()
     filtered_quotes = [
         quote for quote in quotes_data if author.lower() == quote['author'].lower()]
     return render_template('author_quotes.html', author=author, quotes=filtered_quotes)
-
-# API routes remain unchanged
-
 
 class QuoteList(Resource):
     def get(self):
