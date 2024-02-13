@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes by {{ author }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% include "base.html" %}
+{% block author_quotes %}
     <div class="container">
         <h1>Quotes by {{ author }}</h1>
         <div class="quotes"  style="text-align: center;">
@@ -17,5 +10,4 @@
             </ul>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% include "base.html" %}
+
+{% block homepage %}
+<div class="container">
+    <h1>Motivational Quotes</h1>
+    <div class="quote-container">
+        <h2>Quote:</h2>
+        <p>{{ random_quote['quote'] }} - {{ random_quote['author'] }}</p>
+    </div>
+    <div class="authors">
+        <h2>Authors:</h2>
+        <ul>
+            {% for quote in quotes %}
+                {% if loop.index <= 10 %}
+                    <li><a href="/authors/{{ quote['author'] }}">{{ quote['author'] }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        <a href="/authors">Browse All Authors</a>
+    </div>
+
+</div>
+{% endblock %}
