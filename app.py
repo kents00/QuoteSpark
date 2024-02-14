@@ -1,11 +1,19 @@
 from flask import Flask, render_template, jsonify, request
 from flask_restful import Api, Resource
+from flask_caching import Cache
 import sqlite3
 import random
 
-app = Flask(__name__)
-api = Api(app)
+config = {
+    "DEBUG": True,
+    "CACHE_TYPE": "SimpleCache",
+    "CACHE_DEFAULT_TIMEOUT": 300
+}
 
+app = Flask(__name__)
+app.config.from_mapping(config)
+cache = Cache(app)
+api = Api(app)
 
 def get_quotes_from_db():
     conn = sqlite3.connect('quotes.db')
@@ -26,6 +34,7 @@ def get_authors_from_db():
 
 
 @app.route('/')
+@cache.cached(timeout=10)
 def index():
     quotes_data = get_quotes_from_db()
     random_quote = random.choice(quotes_data)
@@ -33,6 +42,7 @@ def index():
 
 
 @app.route('/authors/<author>')
+@cache.cached(timeout=20)
 def author_quotes(author):
     quotes_data = get_quotes_from_db()
     filtered_quotes = [
@@ -41,6 +51,7 @@ def author_quotes(author):
 
 
 @app.route('/authors')
+@cache.cached(timeout=20)
 def author_list():
     page = request.args.get('page', 1, type=int)
     per_page = 30  # Number of authors per page
@@ -53,27 +64,22 @@ def author_list():
 
 
 class QuoteList(Resource):
+    @cache.cached(timeout=300)
     def get(self):
         quotes_data = get_quotes_from_db()
         return jsonify(quotes_data)
 
 
 class RandomQuote(Resource):
+    @cache.cached(timeout=5)
     def get(self):
         quotes_data = get_quotes_from_db()
         quote = random.choice(quotes_data)
         return jsonify(quote)
 
 
-class KeywordQuotes(Resource):
-    def get(self, keyword):
-        quotes_data = get_quotes_from_db()
-        filtered_quotes = [
-            quote for quote in quotes_data if keyword in quote['quote']]
-        return jsonify(filtered_quotes)
-
-
 class AuthorQuotes(Resource):
+    @cache.cached(timeout=5)
     def get(self, author):
         quotes_data = get_quotes_from_db()
         filtered_quotes = [
@@ -83,7 +89,6 @@ class AuthorQuotes(Resource):
 
 api.add_resource(QuoteList, '/api/quotes')
 api.add_resource(RandomQuote, '/api/random')
-api.add_resource(KeywordQuotes, '/api/keyword/<string:keyword>')
 api.add_resource(AuthorQuotes, '/api/author/<string:author>')
 
 if __name__ == '__main__':
