@@ -8,7 +8,7 @@ QuoteSpark is a powerful tool for generating motivational quotes, offering an ex
 
 ```bash
 // Clone the repository
-git clone https://github.com/kents00/ZipKode.git
+git clone https://github.com/kents00/QuoteSpark.git
 
 // installing requirements
 pip install -r requirements.txt
