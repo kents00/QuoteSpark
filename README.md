@@ -1,10 +1,12 @@
+# QuoteSpark
+
 QuoteSpark is a powerful tool for generating motivational quotes, offering an extensive collection of inspiring words from influential figures across different eras. With its vast database, QuoteSpark ensures that you can always find the perfect quote to uplift and motivate yourself or others.
 
 ### Installation
 
 ```bash
 // Clone the repository
-git clone https://github.com/kents00/ZipKode.git
+git clone https://github.com/kents00/QuoteSpark.git
 
 // installing requirements
 pip install -r requirements.txt
