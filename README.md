@@ -29,8 +29,8 @@ This project provide a simple API for getting quotes and accessing motivational 
 
     ```json
     [
-       {"quote": "Quote 1", "author": "Author 1", "keywords": ["keyword1", "keyword2"]},
-        {"quote": "Quote 2", "author": "Author 2", "keywords": ["keyword3", "keyword4"]}
+    {"quote": "Quote 1", "author": "Author 1"},
+    {"quote": "Quote 2", "author": "Author 2"}
     ]
     ```
 
@@ -42,7 +42,7 @@ This project provide a simple API for getting quotes and accessing motivational 
 - Example response:
 
     ```json
-    {"quote": "Random Quote", "author": "Random Author", "keywords": ["random", "quote"]}
+    {"quote": "Random Quote", "author": "Random Author"}
     ```
 
 
@@ -54,7 +54,7 @@ This project provide a simple API for getting quotes and accessing motivational 
 
     ```json
     [
-        {"quote": "Quote 1", "author": "Dalai Lama", "keywords": ["peace", "wisdom"]},
-        {"quote": "Quote 2", "author": "Dalai Lama", "keywords": ["compassion", "kindness"]}
+    {"quote": "Quote 1", "author": "Dalai Lama"},
+    {"quote": "Quote 2", "author": "Dalai Lama"}
     ]
     ```
