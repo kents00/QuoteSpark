@@ -40,6 +40,9 @@ def index():
     random_quote = random.choice(quotes_data)
     return render_template('homepage.html', quotes=quotes_data, random_quote=random_quote)
 
+@app.route("/robots.txt")
+def robots_dot_txt():
+    return "User-agent: *\nAllow: /"
 
 @app.route('/authors/<author>')
 @cache.cached(timeout=300)
