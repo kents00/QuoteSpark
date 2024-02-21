@@ -1,0 +1,10 @@
+{% block random_quotes %}
+<section class="home-hero">
+    <div class="home-heading">
+    <h1 class="home-header">
+        {{ random_quote['quote'] }}
+    </h1>
+    <p class="home-caption">{{ random_quote['author'] }}</p>
+    </div>
+</section>
+{% endblock %}

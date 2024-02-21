@@ -1,0 +1,1217 @@
+.author-quotes-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2B2E4A;
+}
+.author-quotes-navbar {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.author-quotes-logo {
+  color: #F1EFEF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.author-quotes-desktop-menu {
+  display: flex;
+}
+.author-quotes-nav {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.author-quotes-button {
+  color: #F1EFEF;
+}
+.author-quotes-button1 {
+  color: #F1EFEF;
+}
+.author-quotes-button2 {
+  color: #F1EFEF;
+}
+.author-quotes-button3 {
+  color: #F1EFEF;
+}
+.author-quotes-btn-group {
+  gap: var(--dl-space-space-fourunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.author-quotes-socials {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.author-quotes-image {
+  width: 100px;
+  object-fit: cover;
+}
+.author-quotes-icon {
+  width: 24px;
+  height: 24px;
+}
+.author-quotes-icon02 {
+  width: 24px;
+  height: 24px;
+}
+.author-quotes-icon04 {
+  width: 24px;
+  height: 24px;
+}
+.author-quotes-image1 {
+  width: 100px;
+  object-fit: cover;
+}
+.author-quotes-view {
+  color: #F1EFEF;
+  text-decoration: none;
+  background-color: rgb(232, 69, 69);
+}
+.author-quotes-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.author-quotes-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.author-quotes-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.author-quotes-nav1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.author-quotes-container01 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.author-quotes-logo1 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.author-quotes-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author-quotes-icon08 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.author-quotes-nav2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.author-quotes-button5 {
+  color: rgb(255, 255, 255);
+}
+.author-quotes-button6 {
+  color: rgb(255, 255, 255);
+}
+.author-quotes-button7 {
+  color: rgb(255, 255, 255);
+}
+.author-quotes-button8 {
+  color: rgb(255, 255, 255);
+}
+.author-quotes-container02 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+}
+.author-quotes-hero {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+  background-color: #E84545;
+}
+.author-quotes-heading {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.author-quotes-header {
+  color: rgb(241, 239, 239);
+  font-size: 90px;
+  max-width: 900px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+.author-quotes-caption {
+  color: rgb(241, 239, 239);
+  font-size: 30px;
+  max-width: 800px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 36px;
+}
+.author-quotes-quotes {
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+}
+.author-quotes-content {
+  gap: var(--dl-space-space-twounits);
+  width: 850px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+}
+.author-quotes-main {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.author-quotes-container03 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.author-quotes-view01 {
+  color: rgb(241, 239, 239);
+  width: 680px;
+  height: 145px;
+  font-size: 25px;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  letter-spacing: 2px;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view02 {
+  color: rgb(241, 239, 239);
+  width: 680px;
+  height: 145px;
+  font-size: 25px;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  letter-spacing: 2px;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view03 {
+  color: rgb(241, 239, 239);
+  width: 680px;
+  height: 145px;
+  font-size: 25px;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  letter-spacing: 2px;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view04 {
+  color: rgb(241, 239, 239);
+  width: 680px;
+  height: 145px;
+  font-size: 25px;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  letter-spacing: 2px;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-description {
+  gap: 120px;
+  width: 1050px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+}
+.author-quotes-container04 {
+  width: auto;
+  display: flex;
+  max-width: 1440px;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.author-quotes-content1 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+}
+.author-quotes-paragraph {
+  color: #f1efef;
+  font-size: 40px;
+  align-self: flex-start;
+  text-align: justify;
+  line-height: 60px;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-paragraph1 {
+  color: #F1EFEF;
+  font-size: 40px;
+  text-align: justify;
+  line-height: 60px;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-authors {
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+}
+.author-quotes-content2 {
+  gap: var(--dl-space-space-twounits);
+  width: 1060px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding-top: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  background-color: #E84545;
+}
+.author-quotes-main1 {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.author-quotes-heading1 {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.author-quotes-header1 {
+  color: rgb(241, 239, 239);
+  font-size: 80px;
+  max-width: 900px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+.author-quotes-container05 {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.author-quotes-container06 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-view05 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view06 {
+  color: rgb(241, 239, 239);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view07 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view08 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view09 {
+  color: #F1EFEF;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-container07 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-view10 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view11 {
+  color: rgb(241, 239, 239);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view12 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view13 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view14 {
+  color: #F1EFEF;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-container08 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-view15 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view16 {
+  color: rgb(241, 239, 239);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view17 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view18 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view19 {
+  color: #F1EFEF;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-container09 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-view20 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view21 {
+  color: rgb(241, 239, 239);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view22 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view23 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view24 {
+  color: #F1EFEF;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-container10 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.author-quotes-view25 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view26 {
+  color: rgb(241, 239, 239);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view27 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view28 {
+  color: #f1efef;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(144, 55, 73);
+}
+.author-quotes-view29 {
+  color: #F1EFEF;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #903749;
+}
+.author-quotes-view30 {
+  color: #F1EFEF;
+  padding: var(--dl-space-space-unit);
+  font-style: normal;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 600;
+  margin-right: 0px;
+  margin-bottom: var(--dl-space-space-twounits);
+  background-color: #53354A;
+}
+.author-quotes-footer {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.author-quotes-logo2 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.author-quotes-text4 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  align-self: center;
+  text-align: left;
+  line-height: 27px;
+}
+.author-quotes-container12 {
+  display: contents;
+}
+@media(max-width: 1200px) {
+  .author-quotes-quotes {
+    padding-top: var(--dl-space-space-unit);
+  }
+  .author-quotes-view01 {
+    height: 145px;
+  }
+  .author-quotes-view02 {
+    height: 145px;
+  }
+  .author-quotes-view03 {
+    height: 145px;
+  }
+  .author-quotes-view04 {
+    height: 145px;
+  }
+  .author-quotes-paragraph {
+    align-self: flex-start;
+  }
+  .author-quotes-authors {
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-bottom: var(--dl-space-space-fiveunits);
+  }
+}
+@media(max-width: 1024px) {
+  .author-quotes-container {
+    background-color: #292c46;
+  }
+  .author-quotes-desktop-menu {
+    display: none;
+  }
+  .author-quotes-btn-group {
+    display: none;
+  }
+  .author-quotes-burger-menu {
+    display: flex;
+  }
+  .author-quotes-button4 {
+    display: flex;
+    padding: var(--dl-space-space-unit);
+    flex-direction: row;
+    background-color: #E84545;
+  }
+  .author-quotes-icon06 {
+    fill: #F1EFEF;
+  }
+  .author-quotes-logo1 {
+    color: rgb(0, 0, 0);
+  }
+  .author-quotes-button5 {
+    color: #000000;
+    margin-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .author-quotes-button6 {
+    color: #000000;
+    padding-top: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .author-quotes-button7 {
+    color: #000000;
+    padding-top: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .author-quotes-button8 {
+    color: #000000;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .author-quotes-quotes {
+    padding-top: var(--dl-space-space-unit);
+  }
+  .author-quotes-content {
+    width: 930px;
+  }
+  .author-quotes-main {
+    width: auto;
+  }
+  .author-quotes-container03 {
+    width: auto;
+  }
+  .author-quotes-view01 {
+    height: 145px;
+  }
+  .author-quotes-view02 {
+    height: 145px;
+  }
+  .author-quotes-view03 {
+    height: 145px;
+  }
+  .author-quotes-view04 {
+    height: 145px;
+  }
+  .author-quotes-description {
+    width: 1017px;
+  }
+  .author-quotes-content1 {
+    width: 950px;
+    margin: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-paragraph {
+    color: rgb(241, 239, 239);
+    font-size: 35px;
+    align-self: flex-start;
+    line-height: 60px;
+    margin-left: var(--dl-space-space-oneandhalfunits);
+    margin-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-paragraph1 {
+    color: rgb(241, 239, 239);
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: var(--dl-space-space-oneandhalfunits);
+    margin-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-authors {
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-bottom: var(--dl-space-space-fiveunits);
+  }
+  .author-quotes-content2 {
+    width: 930px;
+  }
+  .author-quotes-main1 {
+    width: auto;
+  }
+  .author-quotes-heading1 {
+    width: 730px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-header1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108px;
+  }
+  .author-quotes-container05 {
+    width: auto;
+  }
+  .author-quotes-container06 {
+    width: auto;
+    height: auto;
+  }
+  .author-quotes-container07 {
+    height: auto;
+  }
+  .author-quotes-container08 {
+    height: auto;
+  }
+  .author-quotes-container09 {
+    height: auto;
+  }
+  .author-quotes-container10 {
+    height: auto;
+  }
+  .author-quotes-view30 {
+    color: #F1EFEF;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #53354A;
+  }
+}
+@media(max-width: 820px) {
+  .author-quotes-paragraph {
+    font-size: 20px;
+    align-self: flex-start;
+    line-height: 30px;
+    margin-left: var(--dl-space-space-oneandhalfunits);
+    margin-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-paragraph1 {
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 30px;
+    margin-left: var(--dl-space-space-oneandhalfunits);
+    margin-right: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 0px;
+  }
+}
+@media(max-width: 735px) {
+  .author-quotes-navbar {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .author-quotes-mobile-menu {
+    height: 100vh;
+  }
+  .author-quotes-nav1 {
+    height: var(--dl-size-size-large);
+  }
+  .author-quotes-hero {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .author-quotes-heading {
+    gap: var(--dl-space-space-unit);
+    width: 536px;
+  }
+  .author-quotes-header {
+    color: rgb(241, 239, 239);
+    font-size: 60px;
+    max-width: 70%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 43px;
+  }
+  .author-quotes-caption {
+    color: rgb(241, 239, 239);
+    font-size: 25px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .author-quotes-quotes {
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .author-quotes-content {
+    width: 735px;
+    justify-content: flex-start;
+  }
+  .author-quotes-main {
+    gap: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-container03 {
+    width: 540px;
+    margin-top: 0px;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+  }
+  .author-quotes-view01 {
+    color: rgb(241, 239, 239);
+    width: 500px;
+    font-size: 25px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgb(144, 55, 73);
+  }
+  .author-quotes-view02 {
+    color: rgb(241, 239, 239);
+    width: 500px;
+    font-size: 25px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgb(144, 55, 73);
+  }
+  .author-quotes-view03 {
+    color: rgb(241, 239, 239);
+    width: 500px;
+    font-size: 25px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgb(144, 55, 73);
+  }
+  .author-quotes-view04 {
+    color: rgb(241, 239, 239);
+    width: 500px;
+    font-size: 25px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgb(144, 55, 73);
+  }
+  .author-quotes-description {
+    gap: var(--dl-space-space-threeunits);
+    width: 700px;
+    padding-bottom: 0px;
+  }
+  .author-quotes-content1 {
+    gap: var(--dl-space-space-unit);
+    width: auto;
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-authors {
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-content2 {
+    width: 720px;
+    padding-top: var(--dl-space-space-threeunits);
+  }
+  .author-quotes-main1 {
+    gap: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-heading1 {
+    gap: var(--dl-space-space-unit);
+    width: 692px;
+  }
+  .author-quotes-header1 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108px;
+  }
+  .author-quotes-container05 {
+    width: 665px;
+    margin-top: 0px;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+  }
+  .author-quotes-container06 {
+    height: auto;
+  }
+  .author-quotes-container07 {
+    height: auto;
+  }
+  .author-quotes-container08 {
+    height: auto;
+  }
+  .author-quotes-container09 {
+    height: auto;
+  }
+  .author-quotes-container10 {
+    height: auto;
+  }
+  .author-quotes-view30 {
+    font-style: normal;
+    margin-top: var(--dl-space-space-unit);
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .author-quotes-footer {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .author-quotes-logo2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .author-quotes-text4 {
+    text-align: center;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .author-quotes-header1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108px;
+  }
+}
+@media(max-width: 415px) {
+  .author-quotes-register {
+    color: #F1EFEF;
+    background-color: #E84545;
+  }
+}
+@media(max-width: 375px) {
+  .author-quotes-navbar {
+    padding: var(--dl-space-space-unit);
+  }
+  .author-quotes-mobile-menu {
+    height: 100vh;
+    padding: 16px;
+    background-color: #F1EFEF;
+  }
+  .author-quotes-heading {
+    width: 290px;
+  }
+  .author-quotes-quotes {
+    padding-top: var(--dl-space-space-unit);
+  }
+  .author-quotes-content {
+    width: 375px;
+    padding-top: 0px;
+  }
+  .author-quotes-main {
+    width: 375px;
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .author-quotes-container03 {
+    width: 375px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .author-quotes-view01 {
+    width: 310px;
+    height: 202px;
+    align-self: center;
+  }
+  .author-quotes-view02 {
+    width: 310px;
+    height: 202px;
+    align-self: center;
+  }
+  .author-quotes-view03 {
+    width: 310px;
+    height: 202px;
+    align-self: center;
+  }
+  .author-quotes-view04 {
+    width: 310px;
+    height: 202px;
+    align-self: center;
+  }
+  .author-quotes-description {
+    width: 325px;
+    height: 479px;
+  }
+  .author-quotes-container04 {
+    width: 375px;
+    height: 290px;
+  }
+  .author-quotes-content1 {
+    width: 375px;
+    height: 424px;
+    align-self: center;
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: 0px;
+  }
+  .author-quotes-paragraph {
+    color: rgb(241, 239, 239);
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+    align-self: flex-start;
+    font-style: normal;
+    text-align: left;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: var(--dl-space-space-halfunit);
+    margin-right: var(--dl-space-space-halfunit);
+  }
+  .author-quotes-paragraph1 {
+    color: rgb(241, 239, 239);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+    line-height: 60px;
+    margin-left: var(--dl-space-space-halfunit);
+    margin-right: var(--dl-space-space-halfunit);
+    margin-bottom: 0px;
+  }
+  .author-quotes-authors {
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .author-quotes-content2 {
+    width: auto;
+    padding-top: 0px;
+  }
+  .author-quotes-main1 {
+    width: auto;
+    height: auto;
+  }
+  .author-quotes-heading1 {
+    width: 100%;
+  }
+  .author-quotes-header1 {
+    height: 83px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108px;
+  }
+  .author-quotes-container05 {
+    width: auto;
+    height: auto;
+  }
+  .author-quotes-container06 {
+    width: 100%;
+    height: auto;
+  }
+  .author-quotes-view07 {
+    display: none;
+  }
+  .author-quotes-view08 {
+    display: none;
+  }
+  .author-quotes-view09 {
+    display: none;
+  }
+  .author-quotes-container07 {
+    width: 100%;
+    height: auto;
+  }
+  .author-quotes-view12 {
+    display: none;
+  }
+  .author-quotes-view13 {
+    display: none;
+  }
+  .author-quotes-view14 {
+    display: none;
+  }
+  .author-quotes-container08 {
+    width: 100%;
+    height: auto;
+  }
+  .author-quotes-view17 {
+    display: none;
+  }
+  .author-quotes-view18 {
+    display: none;
+  }
+  .author-quotes-view19 {
+    display: none;
+  }
+  .author-quotes-container09 {
+    width: 100%;
+    height: auto;
+  }
+  .author-quotes-view22 {
+    display: none;
+  }
+  .author-quotes-view23 {
+    display: none;
+  }
+  .author-quotes-view24 {
+    display: none;
+  }
+  .author-quotes-container10 {
+    width: 100%;
+    height: auto;
+  }
+  .author-quotes-view27 {
+    display: none;
+  }
+  .author-quotes-view28 {
+    display: none;
+  }
+  .author-quotes-view29 {
+    display: none;
+  }
+  .author-quotes-view30 {
+    font-style: normal;
+    font-weight: 600;
+  }
+  .author-quotes-footer {
+    width: auto;
+    padding: var(--dl-space-space-unit);
+    max-width: auto;
+    flex-direction: column;
+  }
+  .author-quotes-text4 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

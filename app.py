@@ -38,7 +38,7 @@ def get_authors_from_db():
 def index():
     quotes_data = get_quotes_from_db()
     random_quote = random.choice(quotes_data)
-    return render_template('homepage.html', quotes=quotes_data, random_quote=random_quote)
+    return render_template('index.html', quotes=quotes_data, random_quote=random_quote)
 
 @app.route("/robots.txt")
 def robots_dot_txt():
