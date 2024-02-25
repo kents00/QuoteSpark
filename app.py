@@ -15,6 +15,7 @@ app.config.from_mapping(config)
 cache = Cache(app)
 api = Api(app)
 
+
 def get_quotes_from_db():
     conn = sqlite3.connect('quotes.db')
     cursor = conn.cursor()
@@ -38,11 +39,13 @@ def get_authors_from_db():
 def index():
     quotes_data = get_quotes_from_db()
     random_quote = random.choice(quotes_data)
-    return render_template('index.html', quotes=quotes_data, random_quote=random_quote)
+    return render_template('featured_authors.html', quotes=quotes_data, random_quote=random_quote)
+
 
 @app.route("/robots.txt")
 def robots_dot_txt():
     return "User-agent: *\nAllow: /"
+
 
 @app.route('/authors/<author>')
 @cache.cached(timeout=300)
@@ -50,7 +53,7 @@ def author_quotes(author):
     quotes_data = get_quotes_from_db()
     filtered_quotes = [
         quote for quote in quotes_data if author.lower() == quote['author'].lower()]
-    return render_template('author_quotes.html', author=author, quotes=filtered_quotes)
+    return render_template('author-quotes.html', author=author, quotes=filtered_quotes)
 
 
 @app.route('/authors')

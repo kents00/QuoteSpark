@@ -1,225 +1,220 @@
+{% extends "index.html" %}
+
+{% block hero %}
+<section class="home-hero">
+    <div class="home-heading">
+        <h1 class="home-header">
+            {{ random_quote['quote'] }}
+        </h1>
+        <p class="home-caption">{{ random_quote['author'] }}</p>
+    </div>
+</section>
+<section class="home-description">
+    <img
+        alt="image"
+        src="static/banner.jpg"
+        class="home-divider-image" />
+
+    <div class="home-container03">
+        <p class="home-paragraph">
+            QuoteSpark is a powerful tool for generating motivational quotes,
+            offering an extensive collection of inspiring words from
+            influential figures across different eras. With its vast database,
+            QuoteSpark ensures that you can always find the perfect quote to
+            uplift and motivate yourself or others.
+        </p>
+    </div>
+</section>
+{% endblock %}
+
 {% block featured_authors %}
 <section class="home-authors">
-    <div class="home-content1">
-    <div class="home-main">
-        <div class="home-heading1">
-
-        <h2 class="home-header1">Featured Authors</h2>
-        <div class="home-container04">
-            <div class="home-container05">
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view01 button"
-            >
-                Napoleon Hill
-            </a>
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view02 button"
-            >
-                Kahlil Gibran
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view03 button"
-            >
-                George Eliot
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view04 button"
-            >
-                Charles Dickens
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view05 button"
-            >
-                Alfred Adler
-            </a>
+    <div class="home-content">
+        <div class="home-main">
+            <div class="home-heading1">
+                <h2 class="home-header1">Featured Authors</h2>
+                <div class="home-container04">
+                    <div class="home-container05">
+                        {% for quote in quotes %}
+                            {% if loop.index <= 4 %}
+                        <a
+                            href="/authors/{{ quote['author'] }}"
+                            class="home-view01 button">
+                            {{ quote['author'] }}
+                        </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="home-container06">
+                        {% for quote in quotes %}
+                            {% if loop.index >= 69 and loop.index <= 72 %}
+                        <a
+                            href="/authors/{{ quote['author'] }}"
+                            class="home-view06 button">
+                            {{ quote['author'] }}
+                        </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="home-container07">
+                        {% for quote in quotes %}
+                            {% if loop.index >= 5 and loop.index <= 8 %}
+                        <a
+                            href="/authors/{{ quote['author'] }}"
+                            class="home-view01 button">
+                            {{ quote['author'] }}
+                        </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="home-container08">
+                        {% for quote in quotes %}
+                            {% if loop.index >= 20 and loop.index <= 23 %}
+                        <a
+                            href="/authors/{{ quote['author'] }}"
+                            class="home-view01 button">
+                            {{ quote['author'] }}
+                        </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="home-container09">
+                        {% for quote in quotes %}
+                            {% if loop.index >= 79 and loop.index <= 82 %}
+                        <a
+                            href="/authors/{{ quote['author'] }}"
+                            class="home-view01 button">
+                            {{ quote['author'] }}
+                        </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <button class="home-view26 button">Browse All Authors</button>
             </div>
-            <div class="home-container06">
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view06 button"
-            >
-                Napoleon Hill
-            </a>
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view07 button"
-            >
-                Kahlil Gibran
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view08 button"
-            >
-                George Eliot
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view09 button"
-            >
-                Charles Dickens
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view10 button"
-            >
-                Alfred Adler
-            </a>
-            </div>
-            <div class="home-container07">
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view11 button"
-            >
-                Napoleon Hill
-            </a>
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view12 button"
-            >
-                Kahlil Gibran
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view13 button"
-            >
-                George Eliot
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view14 button"
-            >
-                Charles Dickens
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view15 button"
-            >
-                Alfred Adler
-            </a>
-            </div>
-            <div class="home-container08">
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view16 button"
-            >
-                Napoleon Hill
-            </a>
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view17 button"
-            >
-                Kahlil Gibran
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view18 button"
-            >
-                George Eliot
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view19 button"
-            >
-                Charles Dickens
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view20 button"
-            >
-                Alfred Adler
-            </a>
-            </div>
-            <div class="home-container09">
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view21 button"
-            >
-                Napoleon Hill
-            </a>
-            <a
-                href="https://colorhunt.co/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view22 button"
-            >
-                Kahlil Gibran
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view23 button"
-            >
-                George Eliot
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view24 button"
-            >
-                Charles Dickens
-            </a>
-            <a
-                href="https://colorhunt.co/palettes/popular"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-view25 button"
-            >
-                Alfred Adler
-            </a>
-            </div>
-        </div>
-        <button class="home-view26 button">Browse All Authors</button>
         </div>
     </div>
+</section>
+{% endblock %}
+
+{% block faq %}
+<section class="home-faq">
+    <h2 class="home-header2">Frequently Asked Questions</h2>
+    <div class="home-accordion">
+        <div
+            id="About"
+            data-role="accordion-container"
+            class="home-element accordion">
+            <div class="home-content1">
+                <span class="home-header3">What is QuoteSpark?</span>
+                <span data-role="accordion-content" class="home-description1">
+                    QuoteSpark is a powerful tool for generating motivational
+                    quotes, offering an extensive collection of inspiring words
+                    from influential figures across different eras.
+                </span>
+            </div>
+            <div class="home-icon-container">
+                <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon10">
+                    <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path></svg><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon12">
+                    <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                </svg>
+            </div>
+        </div>
+        <div
+            id="API"
+            data-role="accordion-container"
+            class="home-element1 accordion">
+            <div class="home-content2">
+                <span class="home-header4">
+                    <span>Get Started using API</span>
+                    <br />
+                </span>
+                <span data-role="accordion-content" class="home-description2">
+                    <span class="home-text4">
+                        Our API is incredibly easy to use, check out the code
+                        samples below to get started:
+                    </span>
+                    <br />
+                    <span>Read the full documentation →</span>
+                    <br />
+                </span>
+            </div>
+            <div class="home-icon-container1">
+                <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon14">
+                    <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path></svg><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon16">
+                    <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                </svg>
+            </div>
+        </div>
+        <div
+            data-role="accordion-container"
+            class="home-element2 accordion">
+            <div class="home-content3">
+                <span class="home-header5">Instant Words of Inspiration</span>
+                <span data-role="accordion-content" class="home-description3">
+                    QuoteSpark is a simple API that can be used to fetch quotes
+                    from infuential figures throughout history into JSON format.
+                    While it's not hard to find a database of inspirational
+                    quotes
+                    online, most of them require registration or just plain
+                    suck.
+                </span>
+            </div>
+            <div class="home-icon-container2">
+                <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon18">
+                    <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path></svg><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon20">
+                    <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                </svg>
+            </div>
+        </div>
+        <div
+            data-role="accordion-container"
+            class="home-element3 accordion">
+            <div class="home-content4">
+                <span class="home-header6">Unlimited Requests</span>
+                <span data-role="accordion-content" class="home-description4">
+                    You can use it if you want to
+                </span>
+            </div>
+            <div class="home-icon-container3">
+                <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon22">
+                    <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path></svg><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon24">
+                    <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                </svg>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}
