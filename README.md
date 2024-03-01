@@ -54,7 +54,7 @@ This project provide a simple API for getting quotes and accessing motivational 
 
     ```json
     [
-    {"quote": "Quote 1", "author": "Dalai Lama"},
-    {"quote": "Quote 2", "author": "Dalai Lama"}
+    {"quote": "Quote 1", "author": "Author 1"},
+    {"quote": "Quote 2", "author": "Author 2"}
     ]
     ```
