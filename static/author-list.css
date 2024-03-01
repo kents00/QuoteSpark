@@ -205,20 +205,21 @@
 .author-list-textinput {
   width: 100%;
   height: auto;
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #F1EFEF;
 }
 .author-list-container03 {
   width: auto;
   height: auto;
-  margin: 0px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 .author-list-container04 {
   width: auto;
   height: auto;
   display: flex;
-  align-items: flex-start;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
 .author-list-view01 {
@@ -444,6 +445,34 @@
   text-decoration: none;
   background-color: #903749;
 }
+.author-list-container09 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.author-list-view26 {
+  color: rgb(241, 239, 239);
+  padding: var(--dl-space-space-unit);
+  font-style: normal;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 600;
+  margin-right: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-twounits);
+  background-color: rgb(83, 53, 74);
+}
+.author-list-view27 {
+  color: rgb(241, 239, 239);
+  padding: var(--dl-space-space-unit);
+  font-style: normal;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 600;
+  margin-left: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-twounits);
+  background-color: rgb(83, 53, 74);
+}
 .author-list-footer {
   width: 100%;
   display: flex;
@@ -468,7 +497,7 @@
   text-align: left;
   line-height: 27px;
 }
-.author-list-container10 {
+.author-list-container11 {
   display: contents;
 }
 @media(max-width: 1200px) {
@@ -560,6 +589,18 @@
   .author-list-container08 {
     height: auto;
   }
+  .author-list-view26 {
+    color: #F1EFEF;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #53354A;
+  }
+  .author-list-view27 {
+    color: #F1EFEF;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #53354A;
+  }
 }
 @media(max-width: 735px) {
   .author-list-navbar {
@@ -616,6 +657,18 @@
   }
   .author-list-container08 {
     height: auto;
+  }
+  .author-list-view26 {
+    font-style: normal;
+    margin-top: var(--dl-space-space-unit);
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .author-list-view27 {
+    font-style: normal;
+    margin-top: var(--dl-space-space-unit);
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
   }
   .author-list-footer {
     padding-left: var(--dl-space-space-twounits);
@@ -743,6 +796,14 @@
   }
   .author-list-view25 {
     display: none;
+  }
+  .author-list-view26 {
+    font-style: normal;
+    font-weight: 600;
+  }
+  .author-list-view27 {
+    font-style: normal;
+    font-weight: 600;
   }
   .author-list-footer {
     width: auto;

@@ -46,7 +46,6 @@ def index():
 def robots_dot_txt():
     return "User-agent: *\nAllow: /"
 
-
 @app.route('/authors/<author>')
 @cache.cached(timeout=300)
 def author_quotes(author):
@@ -59,7 +58,7 @@ def author_quotes(author):
 @app.route('/authors')
 def author_list():
     page = request.args.get('page', 1, type=int)
-    per_page = 30  # Number of authors per page
+    per_page = 50  # Number of authors per page
     all_authors = get_authors_from_db()
     total_pages = (len(all_authors) + per_page - 1) // per_page
     start_index = (page - 1) * per_page
