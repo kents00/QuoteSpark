@@ -1,5 +1,7 @@
 # QuoteSpark
 
+![home](https://github.com/kents00/QuoteSpark/assets/69900896/2f4bf3b0-52b1-4b8f-bdfa-10736a5800ba)
+
 QuoteSpark is a powerful tool for generating motivational quotes, offering an extensive collection of inspiring words from influential figures across different eras. With its vast database, QuoteSpark ensures that you can always find the perfect quote to uplift and motivate yourself or others.
 
 ### Installation
