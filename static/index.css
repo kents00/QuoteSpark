@@ -107,7 +107,7 @@
   position: fixed;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #2B2E4A;
 }
 .home-nav1 {
   display: flex;
@@ -122,7 +122,7 @@
   justify-content: space-between;
 }
 .home-logo1 {
-  color: rgb(255, 255, 255);
+  color: #F1EFEF;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -135,6 +135,7 @@
 .home-icon08 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
+  fill: #F1EFEF;
 }
 .home-nav2 {
   flex: 0 0 auto;
@@ -750,9 +751,6 @@
   }
   .home-icon06 {
     fill: #F1EFEF;
-  }
-  .home-logo1 {
-    color: rgb(0, 0, 0);
   }
   .home-button1 {
     color: #000000;
