@@ -5,124 +5,121 @@
     <div class="author-list-main">
       <div class="author-list-heading">
         <h2 class="author-list-header">Browse Authors</h2>
-        <input type="text" placeholder="Type to search ..." class="author-list-textinput input" />
+        <input type="text" id="searchInput" placeholder="Type to search ..." class="author-list-textinput input" />
         <div class="author-list-container03">
 
-
           <div class="author-list-container04">
-          {% for author in authors %}
-          {% if loop.index <=4 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+            {% for author in authors %}
+            {% if loop.index <=4 %} <a href="/authors/{{ author }}" class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container05">
-          {% for author in authors %}
-          {% if loop.index >=5 and loop.index <=8 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container05">
+            {% for author in authors %}
+            {% if loop.index >=5 and loop.index <=8 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container06">
-          {% for author in authors %}
-          {% if loop.index >=9 and loop.index <=12 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container06">
+            {% for author in authors %}
+            {% if loop.index >=9 and loop.index <=12 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container07">
-          {% for author in authors %}
-          {% if loop.index >=13 and loop.index <=16 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container07">
+            {% for author in authors %}
+            {% if loop.index >=13 and loop.index <=16 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container08">
-          {% for author in authors %}
-          {% if loop.index >=17 and loop.index <=21 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container08">
+            {% for author in authors %}
+            {% if loop.index >=17 and loop.index <=21 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container08">
-          {% for author in authors %}
-          {% if loop.index >=22 and loop.index <=25 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container08">
+            {% for author in authors %}
+            {% if loop.index >=22 and loop.index <=25 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container08">
-          {% for author in authors %}
-          {% if loop.index >=26 and loop.index <=29 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container08">
+            {% for author in authors %}
+            {% if loop.index >=26 and loop.index <=29 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container08">
-          {% for author in authors %}
-          {% if loop.index >=30 and loop.index <=33 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container08">
+            {% for author in authors %}
+            {% if loop.index >=30 and loop.index <=33 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container08">
-          {% for author in authors %}
-          {% if loop.index >=34 and loop.index <=37 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container08">
+            {% for author in authors %}
+            {% if loop.index >=34 and loop.index <=37 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
-        <div class="author-list-container08">
-          {% for author in authors %}
-          {% if loop.index >=38 and loop.index <=41 %}
-          <a href="/authors/{{ author }}" class="author-list-view01 button">
-          {{ author }}
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
+          <div class="author-list-container08">
+            {% for author in authors %}
+            {% if loop.index >=38 and loop.index <=41 %} <a href="/authors/{{ author }}"
+              class="author-list-view01 button">
+              {{ author }}
+              </a>
+              {% endif %}
+              {% endfor %}
+          </div>
 
+        </div>
       </div>
     </div>
-  </div>
-  <div class="author-list-container09">
+    <div class="author-list-container09">
 
-    {% if page > 1 %}
-    <a class="author-list-view26 button" href="/authors?page={{ page - 1 }}">Previous</a>
-    {% endif %}
+      {% if page > 1 %}
+      <a class="author-list-view26 button" href="/authors?page={{ page - 1 }}">Previous</a>
+      {% endif %}
 
-    {% if page < total_pages %}
-    <a class="author-list-view27 button" href="/authors?page={{ page + 1 }}">Next</a>
-    {% endif %}
+      {% if page < total_pages %} <a class="author-list-view27 button" href="/authors?page={{ page + 1 }}">Next</a>
+        {% endif %}
 
-  </div>
+    </div>
   </div>
 </section>
 {% endblock %}
