@@ -1,4 +1,4 @@
 flask==3.0.2
 flask-restful==0.3.10
 Flask-Caching==2.1.0
-gunicorn==21.2.0
+gunicorn==22.0.0
